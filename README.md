@@ -18,18 +18,18 @@ BlocklyDuino also support [Grove](http://www.seeedstudio.com/wiki/GROVE_System) 
 ### Demo
 
 BlocklyDuino is a web tool. You can give it a try at
-[Web](http://www.gasolin.idv.tw/public/blockly/apps/blocklyduino/index.html) to see the working BlocklyDuino.
+[Web](http://blocklyduino.github.io/BlocklyDuino/blockly/apps/blocklyduino/) to see the working BlocklyDuino.
 
 You can link directly to examples
-* [demo 1](http://www.gasolin.idv.tw/public/blockly/apps/blocklyduino/index.html?url=/public/blockly/apps/blocklyduino/examples/blink.xml) make default LED blink
-* [demo 2](http://www.gasolin.idv.tw/public/blockly/apps/blocklyduino/index.html?url=/public/blockly/apps/blocklyduino/examples/servo_potentio.xml) control servo with potentio rotator
-* [demo 3](http://www.gasolin.idv.tw/public/blockly/apps/blocklyduino/index.html?url=/public/blockly/apps/blocklyduino/examples/click_color.xml) click button to change LED colors
+* [demo 1](http://blocklyduino.github.io/BlocklyDuino/blockly/apps/blocklyduino/index.html?url=examples/blink.xml) make default LED blink
+* [demo 2](http://blocklyduino.github.io/BlocklyDuino/blockly/apps/blocklyduino/index.html?url=examples/servo_potentio.xml) control servo with potentio rotator
+* [demo 3](http://blocklyduino.github.io/BlocklyDuino/blockly/apps/blocklyduino/index.html?url=examples/click_color.xml) click button to change LED colors
 
 Or watch the [video demos](http://www.youtube.com/watch?v=_swiyXcUvNY)
 
 ### Run locally on your web browser
 
-If you want to install it locally. Get code from github and open `blockly/apps/blocklyduino/index.html` in your browser.
+If you want to install it locally. Get code from github and open `blocklyduino/index.html` in your browser.
 
 The preffered way is to put the BlocklyDuino/web folder into a web server and open the url like localhost/public/blockly/apps/blocklyduino/index.html for use.
 
@@ -58,9 +58,20 @@ OR (if running `ino_web_server.py`):
 1. Open browser to BlocklyDuino, drag and drop blocks to make an Arduino program.
 2. Select the 'Arduino' tab and press the 'Upload' button. (press the 'Reset' button to upload an empty program)
 
+### Developpers
+To work on BlocklyDuino, you need google blockly, google closure and python
+
+- Clone the repository : `git clone https://github.com/BlocklyDuino/BlocklyDuino`
+- Checkout the v2 branch : `git checkout v2`
+- Update submodules : `git submodule update --init`
+
+This will clone google blockly and google-closure library as submodules.
+
+Then when you change a block, you will need to run the `build.py` python script in blockly
+
 ### ChangeLog
 
-Check changelog [here](https://github.com/gasolin/BlocklyDuino/blob/master/CHANGELOG.txt)
+Check changelog [here](https://github.com/BlocklyDuino/BlocklyDuino/blob/master/CHANGELOG.txt)
 
 ### Authors and Contributors
 Fred Lin (@gasolin) .
